@@ -1,9 +1,7 @@
 package basic001;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
-import java.util.stream.Collectors;
 
 /**
  * 학생 정보를 저장하고, 이름으로 검색했을 때 학번을 출력하는 프로그램
