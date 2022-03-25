@@ -1,5 +1,8 @@
 package basic003;
 
+import java.util.List;
+import java.util.Vector;
+
 /**
  * 가장 많이 출현한 수를 출력하세요.
  */
