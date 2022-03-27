@@ -8,9 +8,16 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int number = scanner.nextInt();
-        int[] bin = new int[100];
+        while(true) {
+            System.out.print("수를 입력하세요: ");
+            Scanner scanner = new Scanner(System.in);
+            int input = scanner.nextInt();
+            logic(input);
+        }
+    }
+
+    public static void logic(int number) {
+        int[] bin = new int[number];
         int i = 0;
         while(number > 0) {
             bin[i] = number % 2;
@@ -22,5 +29,7 @@ public class Main {
             System.out.print(bin[i]);
             i--;
         }
+
+        System.out.println();
     }
 }

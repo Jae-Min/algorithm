@@ -7,9 +7,17 @@ import java.util.Scanner;
  */
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String input = scanner.next();
+        while(true) {
+            System.out.print("영단어를 입력하세요: ");
+            Scanner scanner = new Scanner(System.in);
+            String input = scanner.next();
+            logic(input);
+        }
+    }
+
+    public static void logic(String input) {
         char[] charArr = input.toCharArray();
+        System.out.println("charArr.length = " + charArr.length);
         for(int i = 0; i < charArr.length; i++) {
             if(charArr[i] >= 'a' && charArr[i] <= 'z') {
                 // 소문자인 경우

@@ -1,17 +1,28 @@
 package basic003;
 
 import java.util.List;
+import java.util.Scanner;
 import java.util.Vector;
 
 /**
- * 가장 많이 출현한 수를 출력하세요.
+ * 가장 많이 출현한 숫자를 출력하세요.
  */
 public class Main {
 
     public static void main(String[] args) {
+        while(true) {
+            System.out.print("수를 입력하세요: ");
+            Scanner scanner = new Scanner(System.in);
+            String input = scanner.nextLine();
+            int[] arr = new int[input.length()];
+            for(int i = 0; i < input.length(); i++) {
+                arr[i] = Integer.parseInt(input.substring(i, i+1));
+            }
+            logic(arr);
+        }
+    }
 
-        int[] input = {1, 1, 1, 2, 2, 2, 0};
-
+    public static void logic(int[] input) {
         int[] arr = new int[10];
         for(int i = 0; i < input.length; i++) {
             arr[input[i]] += 1;
@@ -29,6 +40,8 @@ public class Main {
                 System.out.print(i + " ");
             }
         }
+
+        System.out.println();
     }
 }
 
