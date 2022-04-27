@@ -3,7 +3,7 @@ package basic023;
 import java.util.Scanner;
 
 /**
- * 입력된 문자열을 뒤집이서 출력하시오
+ * 입력된 문자열을 뒤집어서 출력하시오
  * case) abcde
  * result) edcba
  */
